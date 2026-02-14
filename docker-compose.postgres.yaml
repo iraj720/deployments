@@ -17,7 +17,8 @@ services:
 
 networks:
   uploader-net:
-    external: true
+    driver: bridge
+    name: uploader-net
 
 volumes:
   postgres-data:
